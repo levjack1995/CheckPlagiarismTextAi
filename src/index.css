@@ -157,7 +157,7 @@ body {
   margin-top: 0;
 }
 @media (min-width: 721px) {
-  .mob {
+  .image-container {
     display: none;
   }
 }
@@ -327,7 +327,7 @@ ul {
 }
 
 @media (max-width: 721px) {
-  .image-container.mob {
+  .image-container {
     width: 100%;
   }
 }
@@ -377,7 +377,7 @@ ul {
   }
 }
 @media (max-width: 721px) {
-  #image.image-container.mob {
+  #image.image-container {
     justify-content: center;
   }
 }
