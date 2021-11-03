@@ -133,7 +133,12 @@ double antiPlagiarism(string text, string fragment)
     putWordsInArray(text, wordsOfText);
     putWordsInArray(fragment, wordsOfFragment);
 
-    return calculateCoincidence(wordsOfText, wordsOfFragment, arrSizeOfText, arrSizeOfFragment);
+    double coincidence = calculateCoincidence(wordsOfText, wordsOfFragment, arrSizeOfText, arrSizeOfFragment);
+
+    delete[] wordsOfText;
+    delete[] wordsOfFragment;
+
+    return coincidence;
 }
 int calculateCountOfMeanWords(string str)
 {
